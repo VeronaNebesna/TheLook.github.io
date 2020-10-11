@@ -16,7 +16,6 @@ const Header = () =>{
                     <div className="col-xs-5 col-sm-8 col-md-7 col-lg-6">
                         <Menu/>
                     </div>
-
                   </div>
               </div>
           </header>

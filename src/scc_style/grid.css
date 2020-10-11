@@ -18,6 +18,10 @@ body{
    margin-left: -15px;
    display: flex;
 }
+.section_row{
+    display: flex;
+    flex-direction: column;
+}
 [class*="col-"]{
     padding-left: 15px;
     padding-right: 15px;
@@ -59,6 +63,9 @@ body{
     }
     .col-sm-12{
         width: 100%;
+    }
+    .section_row{
+        flex-direction: row;
     }
 }
 
