@@ -7,7 +7,7 @@ const Slider =()=>{
     return(
         <Fragment>
             
-                <AliceCarousel animationDuration = "1500" autoPlayInterval="3000" infinite="true" disableDotsControls="true" mouseTracking="true"  >
+                <AliceCarousel animationDuration = "1500" autoPlayInterval="3000" infinite="true" disableDotsControls="true" mouseTracking="true" autoPlay="true" >
                     <div className="slider_box">
                         <div className="slider_description">
                             <p>
