@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import PhotoListLeft from "./PhotoList/PhotoListLeft"
 import PhotoListRight from "./PhotoList/PhotoListRight"
+import BlogList from "./Blog/BlogList"
 import "./Main.css"
 
 const Main = () =>{
@@ -26,8 +27,14 @@ const Main = () =>{
                         </div>
                         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <PhotoListRight/>
-
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className="section_darker">
+                <div className="container">
+                    <div className="row blog_row">
+                        <BlogList/>
                     </div>
                 </div>
             </section>

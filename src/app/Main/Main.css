@@ -19,12 +19,21 @@
     color:rgb(92,92,92);
     line-height: 25px;
 }
+
+/* dark_section */
+.section_darker{
+    background-color: rgb(246, 247, 249);
+}
+
+/* Tablet */
 @media(min-width:768px){
 
 }
+/* Laptop */
 @media(min-width:992px){
     
 }
+/* Desktop */
 @media(min-width:1200px){
     .section{
         margin-top:130px
