@@ -20,12 +20,13 @@ const Main = () =>{
                                     </p>
                                 </div>
                             </div>
-                            <div className="photo_list">
+                           
                                 <PhotoListLeft/>
-                            </div>
+        
                         </div>
                         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <PhotoListRight/>
+                                <PhotoListRight/>
+
                         </div>
                     </div>
                 </div>

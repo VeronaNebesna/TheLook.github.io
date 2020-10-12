@@ -1,6 +1,8 @@
 import React, { Fragment } from "react"
 import PhotoListItems from "./PhotoListItems"
 import PhotoListData from "./PhotoListData"
+import arrow from "./arrow-right-black.png"
+
 const PhotoListRight = () =>{
     return(
         <Fragment>
@@ -21,6 +23,9 @@ const PhotoListRight = () =>{
                 ))
             }
             </div>
+            <button className="btn_see_all">see all galleries
+                    <img src={arrow}/>
+                </button>
         
         </Fragment>
     )

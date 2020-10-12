@@ -1,6 +1,8 @@
 import React, {Fragment} from "react"
 import arrow from "./arrow-right-black.png"
 import "./PhotoList.css"
+
+
 const PhotoListItems = ({
     img, 
     id, 
