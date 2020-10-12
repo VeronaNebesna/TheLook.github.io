@@ -7,11 +7,11 @@
     background-size: cover;
 }
 .img_slider_second{
-    background: url(./2.jpg) no-repeat 54% 0%;
+    background: url(./2.jpg)  no-repeat 54% 0%;
     background-size: cover;
 }
 .img_slider_third{
-    background: url(./3.jpg) no-repeat 54% 0%;
+    background: url(./3.jpg)  no-repeat 54% 0%;
     background-size: cover;
 }
 
@@ -122,10 +122,10 @@ p.alice-carousel__next-btn-item, p.alice-carousel__next-btn-item:hover{
     }
     .slider_description{
         left:70px;
+        z-index: 10;
     }
     .slider_description > p{
         font-size: 160px;
-        z-index: 10;
         line-height: 150px;
     }
     p.alice-carousel__prev-btn-item, p.alice-carousel__prev-btn-item:hover, p.alice-carousel__next-btn-item, p.alice-carousel__next-btn-item:hover{

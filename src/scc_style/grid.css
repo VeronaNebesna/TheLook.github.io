@@ -72,7 +72,7 @@ body{
 /* ----Laptop------- */
 @media(min-width:992px){
     .container{
-        max-width:960px;
+        max-width:920px;
     }
     .col-md-3{
         width: 25%;
@@ -106,7 +106,7 @@ body{
 /* ----Desktop------- */
 @media(min-width:1200px){
     .container{
-        max-width:1800px;
+        max-width:1500px;
     }
     .col-lg-2{
         width: 15%;
