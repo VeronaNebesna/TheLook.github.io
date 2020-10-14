@@ -1,14 +1,21 @@
 import React, {Fragment} from "react"
+import {useEffect} from "react"
 import GalleryText from "./GalleryText"
 import GalleryAbout from "./GalleryAbout"
 import GallerySlider from "./GallerySlider"
 import GalleryNumbers from "./GalleryNumbers"
 import "./Gallery.css"
 
-
+function ScrollToTopOnMount(){
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[] );
+    return null;
+}
 const Gallery = () =>{
     return(
         <Fragment>
+            <ScrollToTopOnMount/>
             <div className="container">
                 <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -19,8 +26,8 @@ const Gallery = () =>{
                 </div>
                 <div className ="row gallery_row">
                    <div className=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <GalleryAbout/>
-                       <GalleryNumbers/>
+                        <GalleryAbout/>
+                        <GalleryNumbers/>
                    </div>
                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                      <GalleryText/>

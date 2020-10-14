@@ -142,13 +142,14 @@ p.soon{
 }
     .num_item{
         flex-direction: row;
-        flex-wrap: wrap;
+        align-items: center;
     }
     .num_item p:first-child{
         font-size:120px;
     }
     .num_item p:last-child{
         margin-left:30px;
+        margin-top:0
     }
     .our_vision > p{
         margin:40px 0;
