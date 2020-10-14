@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-
+import ReadMoreBtn from "./ReadMoreBtn"
 const BlogListItem= ({
     id,
     img,
@@ -22,7 +22,7 @@ const BlogListItem= ({
                         <p className="subtitle_blog_item">{subtitle_blog_item}</p>
                         <p className="date_of_post">{date_of_post}</p>
                         <p className="desc_of_posts">{desc_of_posts}</p>
-                        <p className="btn_read_more">Read more <i class="fas fa-long-arrow-alt-right"></i></p>
+                       <ReadMoreBtn/>
                     </div>
                 </div>
             </div>
