@@ -2,31 +2,24 @@ import React, { Fragment } from "react"
 import PhotoListLeft from "./PhotoList/PhotoListLeft"
 import PhotoListRight from "./PhotoList/PhotoListRight"
 import BlogList from "./Blog/BlogList"
+import Title from "./PhotoList/Title"
 import "./Main.css"
+import {Route} from "react-router-dom"
+import Gallery from "../Components/Gallery/Gallery"
 
 const Main = () =>{
     return(
         <Fragment>
+             <Route path ="/gallery" exact component={Gallery}/>
             <section className="section">
                 <div className="container">
                     <div className ="row section_row">
                         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                            <div className="description">
-                                <div className="description_title">
-                                    <p>“The camera makes you forget you’re there. It’s not like you are hiding but you forget, you are just looking so much.”</p>
-                                </div>
-                                <div className="description_subtitle">
-                                    <p>
-                                    Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis nulla pretium, vitae ornare leo sollicitudin. Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti.
-                                    </p>
-                                </div>
-                            </div>
-                           
-                                <PhotoListLeft/>
-        
+                             <Route path="/" exact component={Title} />
+                             <Route path="/" exact component={PhotoListLeft}/> 
                         </div>
                         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                <PhotoListRight/>
+                        <Route path="/" exact render={()=><PhotoListRight/>}/>
                         </div>
                     </div>
                 </div>
@@ -34,10 +27,11 @@ const Main = () =>{
             <section className="section_darker">
                 <div className="container">
                     <div className="row blog_row">
-                        <BlogList/>
+                    <Route path="/" exact component={BlogList}/>
                     </div>
                 </div>
             </section>
+            
         </Fragment>
     )
 }

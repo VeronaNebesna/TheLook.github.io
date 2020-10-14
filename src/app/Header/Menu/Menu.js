@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from "react"
+import {Link} from "react-router-dom"
 import "./Menu.css"
 
 class Menu extends Component {
@@ -21,7 +22,7 @@ class Menu extends Component {
         <Fragment>
                 <ul className={openMenu}>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Gallery</a></li>
+                    <li><Link to="/gallery">Gallery</Link></li>
                     <li><a href="">Artists</a></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">News</a></li>
