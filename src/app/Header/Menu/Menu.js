@@ -21,7 +21,7 @@ class Menu extends Component {
         return(
         <Fragment>
                 <ul className={openMenu}>
-                    <li><a href="">Home</a></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/gallery">Gallery</Link></li>
                     <li><a href="">Artists</a></li>
                     <li><a href="">Shop</a></li>

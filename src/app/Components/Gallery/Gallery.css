@@ -140,6 +140,9 @@ p.soon{
     .gallery_title p{
         font-size: 120px;
     }
+    .gallery_title{
+        margin-top:80px
+    }
     .num_item{
         flex-direction: row;
         flex-wrap: wrap;
@@ -163,6 +166,9 @@ p.soon{
 @media(min-width:992px){
     .gallery_row{
         flex-direction: row;
+    }
+    .gallery_title{
+        margin-top:90px
     }
     .num_item p:first-child{
         font-size:70px;
