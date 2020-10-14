@@ -7,10 +7,9 @@
 .gallery_title p{
     font-size: 60px;
     font-weight: 700;
+    margin-top:150px;
 }
-/* .img_gallery{
-    margin-top:60px
-} */
+
 .img_gallery img{
     width: 100%;
 }
@@ -139,10 +138,8 @@ p.soon{
 @media(min-width:768px){
     .gallery_title p{
         font-size: 120px;
-    }
-    .gallery_title{
-        margin-top:80px
-    }
+        margin-top:100px;
+}
     .num_item{
         flex-direction: row;
         flex-wrap: wrap;
