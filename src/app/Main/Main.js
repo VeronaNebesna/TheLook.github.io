@@ -7,7 +7,15 @@ import "./Main.css"
 import {Route} from "react-router-dom"
 import Gallery from "../Components/Gallery/Gallery"
 
+
+  const scrollToTop = ()=>{
+     window.scrollTo({
+         top:0,
+         behavior:"smooth"
+     })   
+    }
 const Main = () =>{
+  
     return(
         <Fragment>
              <Route path ="/gallery" exact component={Gallery}/>
@@ -31,6 +39,11 @@ const Main = () =>{
                     </div>
                 </div>
             </section>
+            <div className="arrow_up" onClick={()=> scrollToTop()}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             
         </Fragment>
     )
