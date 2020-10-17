@@ -6,16 +6,10 @@ import GallerySlider from "./GallerySlider"
 import GalleryNumbers from "./GalleryNumbers"
 import "./Gallery.css"
 
-function ScrollToTopOnMount(){
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[] );
-    return null;
-}
+
 const Gallery = () =>{
     return(
         <Fragment>
-            <ScrollToTopOnMount/>
             <div className="container">
                 <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">

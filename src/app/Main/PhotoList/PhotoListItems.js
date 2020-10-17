@@ -1,5 +1,7 @@
 import React, {Fragment} from "react"
 import arrow from "./arrow-right-black.png"
+
+import {Link} from "react-router-dom"
 import "./PhotoList.css"
 
 
@@ -15,10 +17,11 @@ const PhotoListItems = ({
                 <img src={img}/>
                 <p className="description_photo">{description}</p>
                 <p className="artist">Artist: {artist}</p>
-                <button className="btn_view">View gallery
+                <button className="btn_view"><Link to="/gallery_view">View gallery</Link>
                     <img src={arrow}/>
                 </button>
             </div>
+           
         </Fragment>
     )
 }

@@ -84,7 +84,7 @@ p.soon{
     font-size: 35px;
     color:rgb(0,0,0);
     font-weight: 700;
-    margin:30px 0
+    margin:100px 0
 }
 .img_gallery img{
     width: 100%;
@@ -189,6 +189,6 @@ p.soon{
         height: 550px;
     }
     .descr_photo_gallery{
-        margin-left: 130px;
+        margin-left: 70px;
     }
 }
