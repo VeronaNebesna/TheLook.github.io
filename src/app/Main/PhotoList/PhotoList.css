@@ -15,8 +15,13 @@
     margin:20px 0;
     color:rgb(95,95,95)
 }
+.btn_view a{
+    text-decoration: none;
+    color:rgb(0,0,0);
+}
 .btn_view, .btn_see_all{
     border:none;
+
     background-color: rgba(0,0,0,0);
     cursor: pointer;
     text-transform: uppercase;
@@ -27,6 +32,10 @@
 .btn_see_all{
     font-size: 15px;
     margin-bottom: 80px;
+}
+.btn_see_all a{
+    text-decoration: none;
+    color: rgb(0,0,0);
 }
 .btn_see_all img{
     width:30px;

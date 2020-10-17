@@ -38,7 +38,7 @@
     border-right: 2px solid rgb(87, 82, 82);
     border-bottom: 2px solid rgb(87, 82, 82);
     transform: rotate(225deg);
-    animation: arrow_up 3s infinite;
+    animation: arrow_up 1.5s infinite;
 }
 .arrow_up span:nth-child(2){
     animation-delay: -0.2s;
@@ -59,7 +59,15 @@
         transform: rotate(225deg) translate(20px 20px);
     }
 }
-
+.gallery_view p {
+    margin: 50px auto;
+    width: 200px;
+    text-align: center;
+    color:rgb(0,0,0);
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+}
 /* Tablet */
 @media(min-width:768px){
 

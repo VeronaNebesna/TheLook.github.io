@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import PhotoListItems from "./PhotoListItems"
 import PhotoListData from "./PhotoListData"
+import {Link} from "react-router-dom"
 import arrow from "./arrow-right-black.png"
 
 const PhotoListRight = () =>{
@@ -23,7 +24,7 @@ const PhotoListRight = () =>{
                         /> : null))
                 }
                 </div>
-                <button className="btn_see_all">see all galleries
+                <button className="btn_see_all"><Link to="/gallery_view">see all galleries</Link>
                     <img src={arrow}/>
                 </button>
         </div>

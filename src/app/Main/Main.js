@@ -9,8 +9,9 @@ import Arrow_up from "./Arrow_up/Arrow_up";
 import {photos} from "./photos";
 import ScrollToTopOnMount from "./ScrollToTopMount";
 import GalleryLink from "../Components/Gallery/GalleryLink";
-import "./Main.css";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import "./Main.css";
+
 
 
 
@@ -19,7 +20,7 @@ const Main = () =>{
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
   
-    const openLightbox = useCallback((event, { photo, index }) => {
+    const openLightbox = useCallback((event, {index }) => {
       setCurrentImage(index);
       setViewerIsOpen(true);
     }, []);
@@ -33,8 +34,11 @@ const Main = () =>{
             <ScrollToTopOnMount/>
              <Route path ="/gallery" exact component={GalleryLink}/>
              <Route path ="/gallery_view" exact render={()=>(
-                   <Gallery photos={photos} direction={"column"}
-                   onClick={openLightbox}/>
+                 <div className="gallery_view">
+                     <p>All photos</p>
+                    <Gallery photos={photos} direction={"column"} columns={3}
+                        onClick={openLightbox}/>
+                 </div>
              )}/>
 <ModalGateway>
         {viewerIsOpen ? (
@@ -44,8 +48,10 @@ const Main = () =>{
               views={photos.map(x => ({
                 ...x,
                 srcset: x.srcSet,
-                caption: x.title
+                caption: x.title,
+                swipe:"touch"
               }))}
+              
             />
           </Modal>
         ) : null}

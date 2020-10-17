@@ -7,8 +7,8 @@ export const photos=[
       },
       {
         src: "/images/gallery_view/2.jpg",
-        width: 3,
-        height: 3,
+        width:5,
+        height: 4,
         alt:"Photo 2"
       },
       {
@@ -25,7 +25,7 @@ export const photos=[
       },
       {
         src: "/images/gallery_view/5.jpg",
-        width: 5,
+        width: 6,
         height: 4,
         alt:"Photo 5"
       },
