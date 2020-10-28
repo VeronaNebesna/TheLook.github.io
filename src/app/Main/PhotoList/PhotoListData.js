@@ -1,5 +1,3 @@
-import PhotoList from "./PhotoListLeft"
-
 const PhotoListData = [
     {
         id:1,

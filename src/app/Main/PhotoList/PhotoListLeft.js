@@ -2,7 +2,12 @@ import React, { Fragment } from "react"
 import PhotoListData from "./PhotoListData"
 import PhotoListItems from "./PhotoListItems"
 
-const PhotoListLeft = () =>{
+const PhotoListLeft = ({
+    isOpen,
+  	openImageWindow,
+	indexOpenImg,
+	openImage
+}) =>{
     return(
         <Fragment>
             <div className="photo_list">
@@ -17,7 +22,11 @@ const PhotoListLeft = () =>{
                         id={id}
                         img={img}
                         description={description}
-                        artist={artist}                
+                        artist={artist}
+                        isOpen={isOpen}
+                        openImageWindow={openImageWindow}
+                        indexOpenImg={indexOpenImg}
+                        openImage={openImage}                
                     /> :null
                 ))
             }

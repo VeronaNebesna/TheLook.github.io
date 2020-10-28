@@ -10,6 +10,7 @@ import {photos} from "./photos";
 import ScrollToTopOnMount from "./ScrollToTopMount";
 import GalleryLink from "../Components/Gallery/GalleryLink";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import Artist from "../Components/Artists/Artists"
 import "./Main.css";
 
 
@@ -20,7 +21,7 @@ const Main = () =>{
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
   
-    const openLightbox = useCallback((event, {index }) => {
+    const openLightbox = useCallback((event, {index}) => {
       setCurrentImage(index);
       setViewerIsOpen(true);
     }, []);
@@ -33,6 +34,7 @@ const Main = () =>{
         <Fragment>
             <ScrollToTopOnMount/>
              <Route path ="/gallery" exact component={GalleryLink}/>
+			 <Route path ="/artists" exact component={Artist}/>
              <Route path ="/gallery_view" exact render={()=>(
                  <div className="gallery_view">
                      <p>All photos</p>
@@ -40,28 +42,26 @@ const Main = () =>{
                         onClick={openLightbox}/>
                  </div>
              )}/>
-<ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title,
-                swipe:"touch"
-              }))}
-              
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
+            <ModalGateway>
+                {viewerIsOpen ? (
+                  <Modal onClose={closeLightbox}>
+                    <Carousel
+                      currentIndex={currentImage}
+                      views={photos.map(x => ({
+                        ...x,
+                        swipe:"touch"
+                      }))}
+                      
+                    />
+                  </Modal>
+                ) : null}
+            </ModalGateway>
             <section className="section">
                 <div className="container">
                     <div className ="row section_row">
                         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                              <Route path="/" exact component={Title} />
-                             <Route path="/" exact component={PhotoListLeft}/> 
+                             <Route path="/" exact render={ ()=> <PhotoListLeft/>}/> 
                         </div>
                         <Route path="/" exact render={()=><PhotoListRight/>}/>
                     </div>

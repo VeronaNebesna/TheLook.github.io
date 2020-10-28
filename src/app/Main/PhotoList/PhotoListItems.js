@@ -1,19 +1,25 @@
-import React, {Fragment} from "react"
+import React, {Fragment,Component } from "react"
 import arrow from "./arrow-right-black.png"
-
 import {Link} from "react-router-dom"
+import {keys} from "lodash"
+import PhotoListData from "./PhotoListData"
 import "./PhotoList.css"
+
+const photoMap = PhotoListData.reduce((accObj, idElem)=>({
+    ...accObj,
+    [idElem.id]:idElem
+}),[])
 
 
 const PhotoListItems = ({
     img, 
     id, 
     description,
-    artist
-}) =>{
+    artist,
+})=>{
     return(
         <Fragment>
-            <div className="photo_list_items" key={id}>
+            <div className="photo_list_items" key={id} >
                 <img src={img}/>
                 <p className="description_photo">{description}</p>
                 <p className="artist">Artist: {artist}</p>
@@ -21,7 +27,7 @@ const PhotoListItems = ({
                     <img src={arrow}/>
                 </button>
             </div>
-           
+            
         </Fragment>
     )
 }

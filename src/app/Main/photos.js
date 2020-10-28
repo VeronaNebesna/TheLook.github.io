@@ -1,11 +1,13 @@
 export const photos=[
     {
+        id:1,
         src: "/images/gallery_view/1.jpg",
         width: 4,
         height: 3,
         alt:"Photo 1"
       },
       {
+        id:2,
         src: "/images/gallery_view/2.jpg",
         width:5,
         height: 4,

@@ -1,4 +1,6 @@
-
+body{
+    position: relative;
+}
 .photo_list_items{
     margin-bottom: 80px;
 }

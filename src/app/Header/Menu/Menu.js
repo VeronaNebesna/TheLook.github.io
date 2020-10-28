@@ -23,7 +23,7 @@ class Menu extends Component {
                 <ul className={openMenu}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/gallery">Gallery</Link></li>
-                    <li><a href="">Artists</a></li>
+                    <li><Link to="/artists">Artists</Link></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">News</a></li>
                     <li><a href="">Contact</a></li>

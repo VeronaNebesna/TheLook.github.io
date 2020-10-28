@@ -1,0 +1,48 @@
+.gallery_title span{
+    font-size: 24px;
+    line-height:35px ;
+    color:#5c5c5c
+}
+.artists_list{
+    margin-top:100px;
+}
+.artists_row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.artists_list_item{
+    text-align: center;
+}
+.artists_list_img{
+    margin-bottom: 20px;
+}
+.artists_list_img img{
+   width: 100%;
+}
+.artists_list_autor{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.artists_list_span{
+    font-size: 18px;
+    font-style: italic;
+    color:#5c5c5c;
+    display: block;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.artists_list_desc {
+    font-size:18px;
+    color:#5c5c5c;
+    line-height: 35px;
+
+}
+
+@media(min-width:992px){
+    .artists_list_item{
+        text-align: start;
+    }
+
+}
