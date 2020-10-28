@@ -26,7 +26,7 @@ class Menu extends Component {
                     <li><Link to="/artists">Artists</Link></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             <div className="navigation" onClick={()=>this.clickOpenMenu()}>
                     <span></span>

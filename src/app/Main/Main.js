@@ -10,6 +10,7 @@ import GalleryLink from "../Components/Gallery/GalleryLink";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Artist from "../Components/Artists/Artists"
 import "./Main.css";
+import Contacts from "../Components/Contacts/Contacts";
 
 
 
@@ -31,8 +32,9 @@ const Main = () =>{
     return(
         <Fragment>
             <ScrollToTopOnMount/>
-             <Route path ="/gallery" exact component={GalleryLink}/>
-			 <Route path ="/artists" exact component={Artist}/>
+            <Route path ="/gallery" exact component={GalleryLink}/>
+			      <Route path ="/artists" exact component={Artist}/>
+            <Route path ="/contact" exact component={Contacts}/>
              <Route path ="/gallery_view" exact render={()=>(
                  <div className="gallery_view">
                      <p>All photos</p>
