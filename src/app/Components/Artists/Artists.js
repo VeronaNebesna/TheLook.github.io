@@ -35,9 +35,7 @@ const Artist = ()=>{
                             </div>
                         ))
                     }
-                   
                 </div>
-
             </div>
         </Fragment>
     )

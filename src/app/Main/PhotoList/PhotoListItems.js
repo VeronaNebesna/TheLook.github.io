@@ -1,14 +1,9 @@
 import React, {Fragment,Component } from "react"
 import arrow from "./arrow-right-black.png"
 import {Link} from "react-router-dom"
-import {keys} from "lodash"
 import PhotoListData from "./PhotoListData"
 import "./PhotoList.css"
 
-const photoMap = PhotoListData.reduce((accObj, idElem)=>({
-    ...accObj,
-    [idElem.id]:idElem
-}),[])
 
 
 const PhotoListItems = ({
@@ -27,7 +22,6 @@ const PhotoListItems = ({
                     <img src={arrow}/>
                 </button>
             </div>
-            
         </Fragment>
     )
 }

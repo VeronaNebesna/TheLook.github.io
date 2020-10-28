@@ -2,7 +2,7 @@
     margin-top: 100px;
 }
 .description{
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 
 }
 .description_title{
@@ -11,13 +11,14 @@
 .description_title p{
     font-size: 36px;
     font-style: italic;
+    line-height: 40px;
     font-weight: 700; 
 }
 
 .description_subtitle p{
     font-size:18px;
     color:rgb(92,92,92);
-    line-height: 25px;
+    line-height:35px;
 }
 
 /* dark_section */
@@ -68,6 +69,7 @@
     font-weight: 700;
     font-style: italic;
 }
+
 /* Tablet */
 @media(min-width:768px){
 

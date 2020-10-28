@@ -9,8 +9,8 @@ const Footer = () =>{
             <footer className="footer">
                 <div className="container">
                     <div className="row footer_row">
-                    <FooterGetInTouch/>
-                    <FooterInputs/>
+                        <FooterGetInTouch/>
+                        <FooterInputs/>
                     </div>
                 </div>
             </footer>

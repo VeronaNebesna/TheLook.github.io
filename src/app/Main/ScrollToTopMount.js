@@ -4,8 +4,8 @@ import {useLocation} from "react-router-dom"
 
 export default function ScrollToTopMount(){
     const { pathname } = useLocation();
-    useEffect(()=>{
-        window.scrollTo(0,0);
-    }, [pathname] );
-    return null
+        useEffect(()=>{
+            window.scrollTo(0,0);
+        }, [pathname] );
+        return null
 }
