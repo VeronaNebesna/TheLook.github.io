@@ -22,7 +22,7 @@ const BlogListItem= ({
                         <p className="subtitle_blog_item">{subtitle_blog_item}</p>
                         <p className="date_of_post">{date_of_post}</p>
                         <p className="desc_of_posts">{desc_of_posts}</p>
-                       <ReadMoreBtn/>
+                        <ReadMoreBtn/>
                     </div>
                 </div>
             </div>

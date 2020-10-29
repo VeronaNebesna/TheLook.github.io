@@ -24,15 +24,15 @@ const PhotoList = ({
                 })=>(
                     <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <PhotoListItems
-                        id={id}
-                        img={img}
-                        description={description}
-                        artist={artist}
-                        isOpen={isOpen}
-                        openImageWindow={openImageWindow}
-                        indexOpenImg={indexOpenImg}
-                        openImage={openImage}                
-                    />
+                            id={id}
+                            img={img}
+                            description={description}
+                            artist={artist}
+                            isOpen={isOpen}
+                            openImageWindow={openImageWindow}
+                            indexOpenImg={indexOpenImg}
+                            openImage={openImage}                
+                        />
                     </div>
                 ))
             }

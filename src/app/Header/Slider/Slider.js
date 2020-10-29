@@ -52,9 +52,6 @@ const Slider =()=>{
                         </div >
                     </div>
             </AliceCarousel>
-
-           
-            
         </Fragment>
     )
 }

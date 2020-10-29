@@ -20,18 +20,18 @@ class Menu extends Component {
         }
         return(
         <Fragment>
-                <ul className={openMenu}>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/gallery">Gallery</Link></li>
-                    <li><Link to="/artists">Artists</Link></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">News</a></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
+            <ul className={openMenu}>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/gallery">Gallery</Link></li>
+                <li><Link to="/artists">Artists</Link></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">News</a></li>
+                <li><Link to="/contact">Contact</Link></li>
+            </ul>
             <div className="navigation" onClick={()=>this.clickOpenMenu()}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </Fragment>
     )

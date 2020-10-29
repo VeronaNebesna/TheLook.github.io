@@ -14,9 +14,9 @@ const Header = () =>{
                       <div className="col-xs-7 col-sm-4 col-md-5 col-lg-6">
                         <Logo/>
                       </div>
-                    <div className="col-xs-5 col-sm-8 col-md-7 col-lg-6">
-                        <Menu/>
-                    </div>
+                      <div className="col-xs-5 col-sm-8 col-md-7 col-lg-6">
+                          <Menu/>
+                      </div>
                   </div>
               </div>
           </header>

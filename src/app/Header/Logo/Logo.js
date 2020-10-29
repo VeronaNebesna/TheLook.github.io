@@ -5,11 +5,11 @@ import logo from "./logo.png"
 
 const Logo = () =>{
     return(
-      <Fragment>
-          <div className="logo">
-              <Link to="/"><img src={logo}/></Link>
-          </div>
-      </Fragment>
+        <Fragment>
+            <div className="logo">
+               <Link to="/"><img src={logo}/></Link>
+            </div>
+        </Fragment>
     )
 }
 

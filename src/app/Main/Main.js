@@ -38,7 +38,7 @@ const Main = () =>{
              <Route path ="/gallery_view" exact render={()=>(
                  <div className="gallery_view">
                      <p>All photos</p>
-                    <Gallery photos={photos} direction={"column"} columns={3}
+                        <Gallery photos={photos} direction={"column"} columns={3}
                         onClick={openLightbox}/>
                  </div>
              )}/>
@@ -59,7 +59,7 @@ const Main = () =>{
             <section className="section">
                 <div className="container">
                     <div className ="row section_row">
-						<Route path="/" exact render={ ()=> <PhotoList/>}/>
+						          <Route path="/" exact render={ ()=> <PhotoList/>}/>
                     </div>
                 </div>
             </section>

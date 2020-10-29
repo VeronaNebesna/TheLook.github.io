@@ -23,12 +23,12 @@ const BlogList= () =>{
                             desc_of_posts
                         })=>(
                             <BlogListItem
-                            id={id}
-                            img={img}
-                            photography={photography}
-                            subtitle_blog_item ={subtitle_blog_item}
-                            date_of_post ={date_of_post}
-                            desc_of_posts={desc_of_posts}
+                                id={id}
+                                img={img}
+                                photography={photography}
+                                subtitle_blog_item ={subtitle_blog_item}
+                                date_of_post ={date_of_post}
+                                desc_of_posts={desc_of_posts}
                             />))
                     }
                 </div>
