@@ -33,7 +33,8 @@ body{
 }
 .btn_see_all{
     font-size: 15px;
-    margin-bottom: 80px;
+    padding-bottom: 150px;
+    padding-left: 100px;
 }
 .btn_see_all a{
     text-decoration: none;
