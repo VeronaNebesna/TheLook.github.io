@@ -1,7 +1,7 @@
 const BlogData =[
     {
         id:1,
-        img: "/images/1_thumb.jpg",
+        img: "/images/1_b.jpg",
         photography: "Photography",
         subtitle_blog_item: "How to take the perfect shot",
         date_of_post: "junuary 23, 2019",
@@ -10,7 +10,7 @@ const BlogData =[
     },
     {
         id:2,
-        img: "/images/2_thumb.jpg",
+        img: "/images/4_b.jpg",
         photography: "Photography",
         subtitle_blog_item: "10 tips for a new photographer",
         date_of_post: "junuary 23, 2019",
