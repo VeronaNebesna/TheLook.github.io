@@ -24,6 +24,7 @@
     background-color: rgba(0,0,0,0);
     margin-bottom: 50px;
     font-size: 15px;
+    color:rgb(255,255,255)
 }
 .send_btn{
     border:none;
@@ -37,4 +38,10 @@
 .send_btn img{
     width: 20px;
     margin-left: 15px;
+}
+.render_mess{
+    color:rgb(255,255,255);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
 }

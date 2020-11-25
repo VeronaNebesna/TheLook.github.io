@@ -1,5 +1,4 @@
 import React, { Fragment } from "react"
-import PhotoListData from "./PhotoListData"
 import PhotoListItems from "./PhotoListItems"
 import Title from "./Title"
 import {Link} from "react-router-dom"
@@ -8,7 +7,8 @@ const PhotoList = ({
     isOpen,
   	openImageWindow,
 	indexOpenImg,
-	openImage
+    openImage,
+    images
 }) =>{
     return(
         <Fragment>
@@ -16,16 +16,16 @@ const PhotoList = ({
                  <Title/>
              </div>
             {
-                PhotoListData.map(({
+                images.map(({
                     id,
-                    img,
+                    image,
                     description,
                     artist
                 })=>(
                     <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <PhotoListItems
                             id={id}
-                            img={img}
+                            img={image}
                             description={description}
                             artist={artist}
                             isOpen={isOpen}

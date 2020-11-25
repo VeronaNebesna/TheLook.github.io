@@ -16,7 +16,9 @@ import Contacts from "../Components/Contacts/Contacts";
 
 
 
-const Main = () =>{
+const Main = ({
+  images
+}) =>{
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
   
@@ -59,7 +61,9 @@ const Main = () =>{
             <section className="section">
                 <div className="container">
                     <div className ="row section_row">
-						          <Route path="/" exact render={ ()=> <PhotoList/>}/>
+						          <Route path="/" exact render={ ()=> <PhotoList
+                        images={images}
+                      />}/>
                     </div>
                 </div>
             </section>
